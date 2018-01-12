@@ -1,0 +1,40 @@
+
+
+.pliego {
+   width: 500px;
+   height: 500px;
+   background: lightsteelblue;
+   border: solid 1px gray;
+   position:relative;
+}
+    
+
+@media  (min-width : 321px) and (max-width : 480px){
+    
+.pliego {
+   width: 310px;
+   height: 310px;
+}
+    
+    
+}
+
+
+
+
+.corte
+{
+   width: 50px;
+   height: 50px;
+   background: mediumaquamarine;
+   border: solid 1px gray;   
+   position:absolute;
+   
+}
+
+
+.numerocorte
+{
+    height: inherit;
+    font-size: 100%;    
+}

@@ -1,0 +1,202 @@
+
+
+
+<jsp:root version="2.0"
+    xmlns:jsp="http://java.sun.com/JSP/Page" 
+     xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+    
+
+
+            <input 
+                TYPE="hidden"
+                name="id"                                                
+                id="otval_id"
+                value="0"
+             />
+            
+            <input 
+                TYPE="hidden"
+                name="id"                                                
+                id="otval_orden"
+                value="0"
+             />
+            
+            
+    
+            <div class="tabular">  
+
+                <div class="fila">
+                    
+                    
+                    <div class="col">  
+                        
+                        <h5>Tamaño del pliego</h5>                
+                        
+                        <div class="campo">
+                            <label 
+                                    for="tam_ancho"
+                                    class="t5"
+                                >Ancho:</label> 
+                            <input 
+                                    TYPE="text"
+                                    name="tam_ancho"                                                
+                                    id="otval_tam_ancho"
+                                    value="0"
+                                    class="t5n"
+                                    disabled="disabled"
+                                    />
+
+                        </div>
+
+                        
+                        
+                        <div class="campo">
+                            <label 
+                                    for="tam_largo"
+                                    class="t5"
+                                >Largo:</label> 
+                            <input 
+                                    TYPE="text"
+                                    name="tam_largo"                                                
+                                    id="otval_tam_largo"
+                                    value="0"
+                                    class="t5n"
+                                    disabled="disabled"
+                                    />
+
+                        </div>
+                    </div>  
+
+                    
+                    <div class="col">  
+                        
+                        <h5>Tamaño de corte</h5>                
+                        
+                        <div class="campo">
+                            <label 
+                                    for="corte_ancho"
+                                    class="t5"
+                                    >Ancho:</label> 
+                            <input 
+                                    TYPE="text"
+                                    name="corte_ancho"                                                
+                                    id="otval_corte_ancho"
+                                    value="0"
+                                    class="t5n"
+                                    disabled="disabled"
+                                    />
+                        </div>
+
+                        
+                        <div class="campo">
+                            <label 
+                                    for="corte_largo"
+                                    class="t5"
+                                    >Largo:</label> 
+                            <input 
+                                    TYPE="text"
+                                    name="corte_largo"                                                
+                                    id="otval_corte_largo"
+                                    value="0"
+                                    class="t5n"
+                                    disabled="disabled"
+                                    />
+                               
+                            
+                        </div>
+                    </div>  
+                    
+                </div>                  
+                
+
+
+
+                <div class="fila">
+                    
+                    <a href="javascript:void(0);" 
+                       id ="irCalculadora"
+                       >ir a calculadora de corte</a>                    
+                    
+                </div>
+                
+                
+                <div class="esp2"><var></var></div>
+                
+                <div class="fila">
+                    
+                    <div class="col">  
+                        <div class="campo">
+                            <label for="cantidad_pedido">Cantidad pedido:</label> 
+                            <input 
+                                    TYPE="text"
+                                    name="cantidad_pedido"                                                
+                                    id="otval_cantidad_pedido"
+                                    value="0"
+                                    class="t5n"                                    
+                                    />
+                            
+                        </div>
+                    </div>  
+                    
+                    <div class="col">  
+                        <div class="campo">
+                            <label for="sale">Sale por pliego:</label> 
+                            <input 
+                                    TYPE="text"
+                                    name="sale"                                                
+                                    id="otval_sale"
+                                    value="0"
+                                    class="t5n"
+                                    disabled="disabled"
+                                    />
+                                                     
+                            
+                        </div>
+                    </div>  
+                    
+                </div>                           
+                
+
+
+                <div class="fila">
+                    <div class="col">  
+                        <div class="campo">
+                            <label for="pliegos">Nro. de pliegos:</label> 
+                            <input 
+                                    TYPE="text"
+                                    name="pliegos"                                                
+                                    id="otval_pliegos"
+                                    class="t5n"
+                                    value="0"
+                                    />
+                        </div>
+                    </div>  
+                </div>                      
+                
+                
+                <div class="fila">
+                    <div class="col">  
+                        <div class="campo">
+                            <label for="descripcion">Descripcion:</label> 
+                            <input 
+                                    TYPE="text"
+                                    name="descripcion"                                                
+                                    id="otval_descripcion"
+                                    class="t30"
+                                    />
+                        </div>
+                    </div>  
+                </div>                      
+                
+                
+            </div>
+                
+
+    
+    
+    
+</jsp:root>
+                
+
+

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    Document   : colores
+    Created on : 09-oct-2013, 12:20:48
+    Author     : hugo
+-->
+
+<jsp:root version="2.0"
+        xmlns:jsp="http://java.sun.com/JSP/Page" 
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html">
+    
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+        
+        <head>
+                        
+            
+            <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0" />    
+            <jsp:directive.page contentType="text/html" pageEncoding="UTF-8"/>   
+            <jsp:directive.include file="../WEB-INF/jspf/sessiones.jspf"/>
+            
+ 
+            <style type="text/css" >            
+                    @import "../css/Basic.css" ;
+                    @import "../css/Esquema.css" ;
+                    @import "../css/Media.css" ;
+                    @import "../css/themes/Red900.css";                    
+                    @import "../css/propio/caluladora.css";
+            </style>
+
+
+            <script type="text/javascript">        
+                
+                <jsp:include page="../js/ajax/libreria.js" />
+                <jsp:include page="../js/utilidad/funciones.js"/>
+                <jsp:include page="../js/componente/OrdenTrabajo/Registro.js"/>
+                <jsp:include page="../js/componente/OrdenTrabajo/form.js"/>
+                    
+                <jsp:include page="../js/componente/Cliente/basicform.js"/>
+                
+                <jsp:include page="../js/componente/OrdenTrabajoDetalle/lista.js"/>                    
+                <jsp:include page="../js/componente/OrdenTrabajoValores/lista.js"/>                
+                    
+            </script>       
+
+        </head>
+        
+        <body>
+            
+            
+            <header>
+                <div></div>
+            </header>
+
+            <nav id = "nav">
+                <span></span>
+            </nav>
+
+            <div id="wrapper">
+                
+                <aside>
+                    <div></div>
+                </aside>
+
+                <section>
+                                                       
+                    <article>
+                        <h4>Orden de Trabajo</h4>  
+                    </article>
+                    
+                    
+                    <article>
+                        
+                            <div id="form_body">
+                                <span></span>
+                            </div>                        
+                        
+                    </article>                      
+                    
+
+                    <article>                        
+                            <div id="tabla_orden_trabajo_detalle">
+                                <span></span>
+                            </div>                        
+                    </article>                            
+
+                    
+                    
+                    <article class="esp2">     
+                            <div id="tabla_orden_trabajo_valores">
+                                <p></p>
+                            </div>                        
+                    </article>                            
+                    
+                    
+                    
+                    
+                    <article>
+                        <div class="tabular">  
+                            <div class="fila">   
+                                <div class="col">
+                                    <div class="campo">
+                                        <label>Observaciones</label>
+                                    </div>
+                                </div>  
+
+                                <div class="col">
+                                    <div class="campo">
+                                        <input type="checkbox" id="chk_offset"/> 
+                                        <label for="chk_offset">OFFSET</label>
+                                    </div>
+                                </div>  
+
+                                <div class="col">
+                                    <div class="campo">
+                                        <input type="checkbox" id="chk_tipografia"/> 
+                                        <label for="cbox2">TIPOGRAFICA</label>
+                                    </div>
+                                </div>  
+                            </div>                
+                        </div>
+                    </article>                                              
+
+
+                    
+                            
+                    <article class="esp2">
+                        <span></span>
+                    </article>  
+                    
+                    
+                   <article class = "botones-footer"> 
+                        <div class ="commandbutton">
+                            <a 
+                                href="javascript:void(0);" 
+                                class="botonEnlace"
+                                id="otval_nuevo"
+                                >
+                                Nuevo</a>
+                        </div>                             
+                       
+                       <div class ="commandbutton">
+                            <a 
+                                href="javascript:void(0);" 
+                                class="botonEnlace"
+                                id="otval_eliminar"
+                                >
+                                Eliminar</a>
+                        </div>                           
+                       
+                       
+                       
+                        <div class ="commandbutton">
+                            <a 
+                                href="javascript:void(0);" 
+                                class="botonEnlace"
+                                id="otval_lista"
+                                >
+                                Lista</a>
+                        </div>                             
+
+                   </article>                             
+                    
+                    
+                </section>
+            </div>
+
+            <footer>
+                <h6>
+                                    
+                </h6>
+            </footer>
+                
+            
+        </body>
+                
+    </html>                
+                       
+</jsp:root>

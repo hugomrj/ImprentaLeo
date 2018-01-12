@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<root>
+    
+    <table 
+        name="public.facturas_detalle">                     
+        
+            <id name="factura_detalle"/>                        
+            <column name="factura"/>
+            <column name="descripcion"/>
+            <column name="cantidad"/>            
+            <column name="precio_unitario"  /> 
+            <column name="sub_total"/>
+            <column name="porcentaje0"/>
+            <column name="porcentaje5"/>
+            <column name="porcentaje10"/>
+            <column name="impuesto"/>
+            <column name="cantidad_hoja"/>
+            
+    </table>
+    
+</root>
+
+
+
+
+
+

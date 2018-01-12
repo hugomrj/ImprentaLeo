@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<root>
+    
+    <table 
+        name="public.facturas">                     
+            <id name="factura"/>                        
+            <column name="numero_factura"/>
+            <column name="fecha_factura" insertnot="insertnot" />            
+            <column name="cliente"  foreign = "Cliente"    />
+            <column name="gravada0"/>
+            <column name="gravada5"/>
+            <column name="gravada10"/>
+            <column name="iva5"/>
+            <column name="iva10"/>
+            <column name="total_iva"/>
+            <column name="monto_total"/>
+            <column name="usuario"/>
+            <column name="forma_pago"/>
+            <column name="orden_trabajo"/>
+                                        
+    </table>
+    
+</root>

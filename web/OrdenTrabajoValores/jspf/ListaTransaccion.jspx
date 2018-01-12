@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<jsp:root version="2.0"
+    xmlns:jsp="http://java.sun.com/JSP/Page" 
+     xmlns:c="http://java.sun.com/jsp/jstl/core">
+    
+    
+        <c:set var = "idRegistro" scope ="page" value = "0"/>
+    
+        <table class="tableA"
+               id="otvalores_transaccion_tabla">
+            
+            
+                <thead>
+                    
+                    <tr>
+                       
+                        <th colspan="2">tamaño pliego</th>                        
+                        <th colspan="2">corte trabajo</th>
+                        <th colspan="2"></th>
+
+                        
+                    </tr>                    
+                    
+                    
+                    <tr>
+                       
+                        <th class="c5">largo</th>
+                        <th class="c5">ancho</th>
+                        <th class="c5">largo</th>
+                        <th class="c5">ancho</th>
+                        <th class="c20">descripcion</th>
+                        <th class="c5">piegos</th>
+
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    
+                    <c:forEach items="${ordenesValores}" var ="lista" >
+
+                        <tr 
+                            data-id_transaccion ="${idRegistro}"
+                            >     
+                            
+                            <td class="c5n">${lista.tam_largo}</td>
+                            <td class="c5n">${lista.tam_ancho}</td>
+                            <td class="c5n">${lista.corte_largo}</td>
+                            <td class="c5n">${lista.corte_ancho}</td>
+                            
+                            <td class="c20t">${lista.descripcion}</td>
+                            <td class="c5n">${lista.pliegos}</td>
+
+                        </tr>  
+                        
+                        <c:set var="idRegistro" scope="page" value="${ idRegistro + 1}"/>  
+                        
+                    </c:forEach>
+                </tbody>
+                
+        </table>
+
+
+     
+
+    
+    
+</jsp:root>
+                
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<root>
+    
+    <table 
+        name="public.ordenes_trabajo">     
+                
+        
+            <id name="orden_trabajo"/>                        
+            <column name="fecha_recepcion"/>
+            <column name="fecha_entrega"/>            
+            <column name="cliente"/>
+            <column name="off_set"/>
+            <column name="tipografica"/>
+            <column name="factura"/>
+            
+                            
+    </table>
+    
+</root>
+
+

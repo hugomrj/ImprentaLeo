@@ -1,0 +1,190 @@
+
+
+<jsp:root version="2.0"
+    xmlns:jsp="http://java.sun.com/JSP/Page" 
+     xmlns:c="http://java.sun.com/jsp/jstl/core">
+    
+    
+
+    
+        
+    <form
+            action="../OrdenTrabajo/Controlador/Agregar" 
+            method="post" 
+            id="ordent_form" 
+            name='ordent_form'
+        >        
+        
+
+        <input 
+                TYPE="hidden"
+                name="factura"                                                
+                id="ordent_factura"
+                value="0"
+                />
+
+
+        
+        <div class="tabular">  
+
+            <div class="fila">
+                <div class="col">  
+                    <div class="campo">
+                        <label for="orden_trabajo">Orden Nro:</label> 
+                        <input 
+                                TYPE="TEXT"
+                                name="orden_trabajo"                                                
+                                id="ordent_orden_trabajo"
+                                class="t5n"
+                                disabled="disabled"
+                                />
+                    </div>
+                </div>  
+            </div>  
+            
+            
+            
+
+            <div class="fila">                
+                <div class="col">
+                    <div class="campo">
+                        <label 
+                            class="t7"
+                            for="fecha_recepcion">Fecha recepcion:</label> 
+                        <input 
+                                TYPE="DATE"
+                                name="fecha_recepcion"                                                
+                                id="ordent_fecha_recepcion"
+                                />
+                    </div>
+                </div>  
+                
+                <div class="col">
+                    <div class="campo">
+                        <label 
+                            class="t7"
+                            for="fecha_entrega">Fecha entrega:</label> 
+                        <input 
+                                TYPE="DATE"
+                                name="fecha_entrega"                                                
+                                id="ordent_fecha_entrega"
+                                />
+                    </div>
+                </div>  
+            </div>                
+
+                
+            
+            
+                        
+            
+            <div class="fila">
+                <div class="col">
+                    <div class="campo">
+
+                        
+                        
+                            <label for="cliente">Cliente:</label> 
+                            
+                            <input TYPE="TEXT" 
+                                   id ="ordent_cliente"
+                                   name="cliente" 
+                                   size ="10"
+                                   class = "FKt5n"
+                                   />      
+                            
+    
+                                   <a 
+                                        href="javascript:void(0);" 
+                                        class="boton_svg"
+                                        id="ordent_cliente_buscar"
+                                        >
+                                        <img src="../svg/more.svg" width="24"/>                            
+                                    </a>                            
+                            
+                            
+                                    <a                                         
+                                        href="javascript:void(0);" 
+                                        class="boton_svg"                                        
+                                        id="ordent_cliente_agregar"
+                                        >
+                                        <img src="../svg/add.svg" width="24"/>                            
+                                    </a>
+
+                                     
+                            <output       
+                                    class="t30"
+                                    id="vicClienteDescripcion">         
+                            </output>                                
+                            
+
+                        
+                        
+                    </div>
+                </div>  
+            </div>                                           
+            
+
+
+            <div class="fila">
+                <div class="col">
+                    <div class="campo">
+                            <label>Ruc:</label> 
+                            <output       
+                                    class="t10"
+                                    id="vicRuc">                                         
+                            </output>      
+                    </div>
+                </div>  
+                
+                <div class="col">
+                    <div class="campo">
+                            <label>Tel:</label> 
+                            <output  
+                                    class="t10"
+                                    id="vicTel">                                
+                            </output>      
+                    </div>
+                </div>  
+            </div>                                           
+
+
+            <div class="fila">
+                <div class="col100">
+                    <div class="campo">
+                            <label>Direccion:</label> 
+                            <output                
+                                    class="t30"
+                                    id="vidDireccion">                                
+                            </output>      
+                    </div>
+                </div>  
+                
+                <div class="col">
+                    <div class="campo">
+                            <label>Ciudad:</label> 
+                            <output                
+                                    class="t10"
+                                    id="vicCiudad">                                
+                            </output>      
+                    </div>
+                </div>  
+            </div>                
+            
+            
+            
+            
+        </div>
+    </form>  
+    
+    
+    
+    
+    
+    
+    
+    
+</jsp:root>
+                
+
+

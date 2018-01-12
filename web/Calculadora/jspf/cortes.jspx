@@ -1,0 +1,216 @@
+    
+    
+<jsp:root version="2.0"
+    xmlns:jsp="http://java.sun.com/JSP/Page" 
+    xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+
+
+        <div class="tabular">
+                <div class="fila">
+
+                        <form
+                                action="../#" 
+                                method="post" 
+                                id="calc_form" 
+                                name='calc_form'
+                            >
+
+
+
+                            <div class="tabular">  
+
+                                <div class="fila">
+
+
+                                    <div class="col">  
+
+                                        <h5>Tamaño del pliego</h5>                
+
+                                        <div class="campo">
+                                            <label 
+                                                    for="tam_ancho"
+                                                    class="t5"
+                                                    >Ancho:</label> 
+                                            <input 
+                                                    TYPE="text"
+                                                    name="tam_ancho"                                                
+                                                    id="calc_tam_ancho"
+                                                    value="0"
+                                                    class="t5n"
+                                                    />
+                                        </div>
+
+                                        <div class="campo">
+                                            <label 
+                                                    for="tam_largo"
+                                                    class="t5"
+                                                    >Largo:</label> 
+                                            <input 
+                                                    TYPE="TEXT"
+                                                    name="tam_largo"                                                
+                                                    id="calc_tam_largo"
+                                                    value="0"
+                                                    class="t5n"
+                                                    />
+                                        </div>
+                                    </div>  
+
+
+
+
+                                    <div class="col">  
+
+                                        <h5>Tamaño de corte</h5>                
+
+                                        <div class="campo">
+                                            <label 
+                                                    for="corte_ancho"
+                                                    class="t5"
+                                                    >Ancho:</label> 
+                                            <input 
+                                                    TYPE="text"
+                                                    name="corte_ancho"                                                
+                                                    id="calc_corte_ancho"
+                                                    value="0"
+                                                    class="t5n"
+                                                    />
+                                        </div>
+
+                                        <div class="campo">
+                                            <label 
+                                                    for="corte_largo"
+                                                    class="t5"
+                                                    >Largo:</label> 
+                                            <input 
+                                                    TYPE="text"
+                                                    name="corte_largo"                                                
+                                                    id="calc_corte_largo"
+                                                    value="0"
+                                                    class="t5n"
+                                                    />
+                                        </div>
+                                    </div>  
+
+                                </div>                  
+
+                            </div>   
+
+                        </form>                              
+
+                </div>    
+                    
+                <div class="fila">
+                    
+                    <div class="col">                    
+                        <div class="pliego"
+                             id="planopliego"
+                             style="bottom: 0.5rem;"
+                             >
+                            
+                            <span></span>
+                            
+                        </div>                        
+                    </div>
+                    
+                    
+       
+                    
+                    <div class="col">
+                        
+                        <div class="fila">
+                                                
+                            <table border="0">
+                            <tr>
+                                <td style="border:none;">Cortes por pliego:</td>
+                                <td style="border:none;" 
+                                    id="numeros_pliegos">0</td>                        
+                            </tr>
+                            <tr>
+                                <td style="border:none;">Papel utilizado %:</td>
+                                <td style="border:none;"
+                                    id="papelutilizado">0</td>
+                            </tr>
+                            <tr>
+                                <td style="border:none;">Desperdiciado %:</td>
+                                <td style="border:none;"
+                                    id="desperdiciado">0</td>
+                            </tr>
+                            </table>    
+                            
+                        </div>
+                        
+                        
+                        <div class="fila">
+                            
+                            <br/>
+
+                                
+                            <br/>
+
+                            <br/>                       
+                            
+                            
+                            <table border="0">
+                            <tr>
+                                <td style="border:none;">
+                                    <input name="intereses" 
+                                           type="radio"  
+                                           checked="checked"
+                                           id="original"
+                                           />  Original
+                                </td>
+                                <td style="border:none;" 
+                                    ></td>                        
+                            </tr>
+                            <tr>
+                                <td style="border:none;">
+                                    <input name="intereses" 
+                                           type="radio"
+                                           id="invertido"
+                                           />  Invertido                                    
+                                </td>
+                                <td style="border:none;"
+                                    ></td>
+                            </tr>
+                            </table>                                
+                            
+                            
+                            
+                        </div>
+                        
+                    </div>          
+               
+                </div>                        
+                    
+        </div>   
+    
+
+        
+    
+        <br/>
+        
+        
+        <div class = "botones-footer">
+
+            <div id="busqueda_footer">
+
+                <div class ="commandbutton">
+                    <a href="javascript:void(0);" 
+                       id ="calc_aceptar"
+                       class="botonEnlace" >Aceptar</a>
+                </div>                                
+
+                <div class ="commandbutton">
+                    <a href="javascript:void(0);" 
+                       id ="calc_cerrar"
+                       class="botonEnlace" >Cerrar</a>
+                </div>                                
+
+            </div> 
+
+        </div>
+        
+        
+        
+</jsp:root> 
